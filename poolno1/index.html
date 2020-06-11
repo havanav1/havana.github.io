@@ -6,7 +6,7 @@
 
         if (account == null) {
             alert("You are not Logged In. Please Login first..!!");
-            location.href = "https://fastbullv1.github.io/signin";
+            location.href = "https://havana.github.io/signin";
         }
     </script>
     <!-- Meta data -->
@@ -18,7 +18,7 @@
 
 
     <!-- Title -->
-    <title>FASTBULL V1</title>
+    <title>HAVANA</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -93,8 +93,8 @@
                 <div class="app-header header top-header navbar-collapse ">
                     <div class="container-fluid">
                         <div class="d-flex">
-                            <a class="header-brand" href="https://fastbullv1.github.io/Home-Dashboard">
-                                <h3 style="margin-top: 16px;color: #141670;">FASTBULL V1</h3>
+                            <a class="header-brand" href="https://havana.github.io/Home-Dashboard">
+                                <h3 style="margin-top: 16px;color: #141670;">HAVANA</h3>
                                 
                                
                             </a>
@@ -112,11 +112,11 @@
                         <div class="line-animations">
                             <ul class="resp-tabs-list hor_1">
                                 
-                                 <li class="resp-tab-active active"><a href="https://fastbullv1.github.io/Home-Dashboard"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/homepage.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Home"></a></li>
-                                <li class="autopool"><a href="https://fastbullv1.github.io/Autopool"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m2.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Autopool"></a></li>
-                                <li class="trans"><a href="https://fastbullv1.github.io/Transaction"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m3.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Transations"></a></li>
-                                <li class="team2"><a href="https://fastbullv1.github.io/Team"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m4.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Team"></a></li>
-                                <li class="media2"><a href="https://fastbullv1.github.io/Media"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m5.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Media"></a></li>
+                                 <li class="resp-tab-active active"><a href="https://havana.github.io/Home-Dashboard"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/homepage.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Home"></a></li>
+                                <li class="autopool"><a href="https://havana.github.io/Autopool"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m2.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Autopool"></a></li>
+                                <li class="trans"><a href="https://havana.github.io/Transaction"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m3.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Transations"></a></li>
+                                <li class="team2"><a href="https://havana.github.io/Team"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m4.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Team"></a></li>
+                                <li class="media2"><a href="https://havana.github.io/Media"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m5.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Media"></a></li>
                              
                                 <li class="logoutuser"><span class="side-menu__icon"></span><img src="https://bullrun.live/Content/assets/img/m6.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Log out"></li>
                           
@@ -182,78 +182,7 @@ function loaddata(poolno) {
                            
                         });
                     }
-                    else if (poolno == 2) {
-                        myContractInstance.methods.pool3users(value.returnValues._user).call().then(function (result1) {
-                          
-                                $('.' + value.returnValues._user + ' td:nth-child(3)').html(result1.id);
-                                $('.' + value.returnValues._user + ' td:nth-child(4)').html(result1.payment_received);
-                          
-                        });
-                    }
-                    else if (poolno == 3) {
-                        myContractInstance.methods.pool3users(value.returnValues._user).call().then(function (result1) {
-                          
-                                $('.' + value.returnValues._user + ' td:nth-child(3)').html(result1.id);
-                                $('.' + value.returnValues._user + ' td:nth-child(4)').html(result1.payment_received);
-                          
-                        });
-                    }
-                    else if (poolno == 4) {
-                        myContractInstance.methods.pool4users(value.returnValues._user).call().then(function (result1) {
-                           
-                                $('.' + value.returnValues._user + ' td:nth-child(3)').html(result1.id);
-                                $('.' + value.returnValues._user + ' td:nth-child(4)').html(result1.payment_received);
-                           
-                        });
-                    }
-                    else if (poolno == 5) {
-                        myContractInstance.methods.pool5users(value.returnValues._user).call().then(function (result1) {
-                            
-                                $('.' + value.returnValues._user + ' td:nth-child(3)').html(result1.id);
-                                $('.' + value.returnValues._user + ' td:nth-child(4)').html(result1.payment_received);
-                           
-                        });
-                    }
-                    else if (poolno == 6) {
-                        myContractInstance.methods.pool6users(value.returnValues._user).call().then(function (result1) {
-                          
-                                $('.' + value.returnValues._user + ' td:nth-child(3)').html(result1.id);
-                                $('.' + value.returnValues._user + ' td:nth-child(4)').html(result1.payment_received);
-                          
-                        });
-                    }
-                    else if (poolno == 7) {
-                        myContractInstance.methods.pool7users(value.returnValues._user).call().then(function (result1) {
-                           
-                                $('.' + value.returnValues._user + ' td:nth-child(3)').html(result1.id);
-                                $('.' + value.returnValues._user + ' td:nth-child(4)').html(result1.payment_received);
-                           
-                        });
-                    }
-                    else if (poolno == 8) {
-                        myContractInstance.methods.pool8users(value.returnValues._user).call().then(function (result1) {
-                           
-                                $('.' + value.returnValues._user + ' td:nth-child(3)').html(result1.id);
-                                $('.' + value.returnValues._user + ' td:nth-child(4)').html(result1.payment_received);
-                          
-                        });
-                    }
-                    else if (poolno == 9) {
-                        myContractInstance.methods.pool9users(value.returnValues._user).call().then(function (result1) {
-                         
-                                $('.' + value.returnValues._user + ' td:nth-child(3)').html(result1.id);
-                                $('.' + value.returnValues._user + ' td:nth-child(4)').html(result1.payment_received);
-                          
-                        });
-                    }
-                    else if (poolno == 10) {
-                        myContractInstance.methods.pool10users(value.returnValues._user).call().then(function (result1) {
-                          
-                                $('.' + value.returnValues._user + ' td:nth-child(3)').html(result1.id);
-                                $('.' + value.returnValues._user + ' td:nth-child(4)').html(result1.payment_received);
-                          
-                        });
-                    }
+                  
                     myContractInstance.methods.users(value.returnValues._user).call().then(function (result1) {
                         
                         $('.' + value.returnValues._user + ' td:nth-child(5)').html(result1.id);
@@ -353,7 +282,7 @@ function loaddata(poolno) {
                         </a>
                     </div>
                     <div class="col-md-6  mt-2 mb-2 text-center">
-                        Copyright © 2020 <a href="#" class="fs-14 text-primary">https://fastbullv1.github.io</a>
+                        Copyright © 2020 <a href="#" class="fs-14 text-primary">https://havana.github.io</a>
                     </div>
                 </div>
             </div>
@@ -433,7 +362,7 @@ function loaddata(poolno) {
         $('.logoutuser').click(function () {
         
             var account = localStorage.removeItem("address", null);
-            location.href = "https://fastbullv1.github.io/signin";
+            location.href = "https://havana.github.io/signin";
         });
     });
     </script>
