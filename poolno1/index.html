@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
+    <!--
     <script>
         var account = localStorage.getItem("address");
 
@@ -80,6 +81,7 @@
 <body class="app">
 
     <!-- Loader -->
+    <!--
     <div id="loading">
         <img src="https://bullrun.live/Content/assets/images/other/loader.svg" class="loader-img" alt="Loader">
     </div>
@@ -210,30 +212,30 @@ function loaddata(poolno) {
         <!-- row opened -->
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12">
-                <div class="card mb-0">
+                <div class="card mb-0 bg-success">
                     <div class="card-header">
-                        <h3 class="card-title">AutoPool 1</h3>
+                        <h3 class="card-title text-white">AutoPool 1</h3>
                         <div class="card-options ">
                             <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
                             <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a>
                             <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
                         </div>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body bg-success">
                         <div class="pooldetailspagetable">
                             <div class="table-responsive">
-                                <table class="table card-table table-striped text-nowrap table-bordered">
-                                    <thead class="border-top">
+                                <table class="table card-table table-striped bg-success text-nowrap table-bordered">
+                                    <thead class="border-top bg-success">
                                         <tr>
-                                            <th>Pool no </th>
+                                            <th class = "text-white">Pool no </th>
 
 
-                                            <th>ETH Address</th>
+                                            <th class = "text-white">ETH Address</th>
 
-                                            <th>Pool sequence no 
+                                            <th class = "text-white">Pool sequence no 
                                             <span type="button" class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pool Sequence number : It's a serial number of autopool generates while user enter at Autopool and TX Timestamp recorded on Ethereum Blockchain."><i class="fa fa-info-circle" ></i></span> </th>
-                                            <th>Payment Received </th>
-                                            <th>User id</th>
+                                            <th class = "text-white">Payment Received </th>
+                                            <th class = "text-white">User id</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -272,11 +274,11 @@ function loaddata(poolno) {
 </script>
 
 <!-- Footer opened -->
-        <footer class="footer-main leftmenu-footer">
+        <footer class="footer-main leftmenu-footer bg-dark">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6  mt-2 mb-2 p-l-10">
-                        <span class="p-r-10">Contract address</span>
+                        <span class="p-r-10 text-white">Contract address: </span>
                         <a href="https://etherscan.io/address/0x885c3177dde25cd01507bf7ca0b00b4b26606143" class="text-success" target="_blank">
                             0x885c3177dde25cd01507bf7ca0b00b4b26606143 <i class="fa fa-external-link"></i>
                         </a>
