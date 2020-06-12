@@ -1,2 +1,2 @@
-# fastbullv1.github.io
-Earn alots ETH with 0.15 ETH.
+# havana.github.io
+Earn ETH with 0.15 ETH.
