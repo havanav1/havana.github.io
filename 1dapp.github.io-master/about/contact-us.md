@@ -1,2 +1,2 @@
-Telegram Channel: https://t.me/fastbullv1smartcontract
-Telegram Group: https://t.me/fastbullv1smartcontract
+Telegram Channel: https://t.me/havanasmartcontract
+Telegram Group: https://t.me/havanasmartcontract
