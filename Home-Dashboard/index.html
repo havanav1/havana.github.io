@@ -275,15 +275,7 @@ function getReferralCommission() {
 
 function getPoolPaymentReceived() {
     var pool1_price = 0.1;
-    var pool2_price = 0.2;
-    var pool3_price = 0.5;
-    var pool4_price = 1;
-    var pool5_price = 2;
-    var pool6_price = 5;
-    var pool7_price = 10;
-    var pool8_price = 20;
-    var pool9_price = 50;
-    var pool10_price = 100;
+    
 
     var referraltotal = parseFloat(0);
 
@@ -296,34 +288,7 @@ function getPoolPaymentReceived() {
                 if (level == 1) {
                     referraltotal = parseFloat(referraltotal) + pool1_price;
                 }
-                else if (level == 2) {
-                    referraltotal = parseFloat(referraltotal) + pool2_price;
-                }
-                else if (level == 3) {
-                    referraltotal = parseFloat(referraltotal) + pool3_price;
-                }
-                else if (level == 4) {
-                    referraltotal = parseFloat(referraltotal) + pool4_price;
-                }
-                else if (level == 5) {
-                    referraltotal = parseFloat(referraltotal) + pool5_price;
-                }
-                else if (level == 6) {
-                    referraltotal = parseFloat(referraltotal) + pool6_price;
-                }
-                else if (level == 7) {
-                    referraltotal = parseFloat(referraltotal) + pool7_price;
-                }
-                else if (level == 8) {
-                    referraltotal = parseFloat(referraltotal) + pool8_price;
-                }
-                else if (level == 9) {
-                    referraltotal = parseFloat(referraltotal) + pool9_price;
-                }
-                else if (level == 10) {
-                    referraltotal = parseFloat(referraltotal) + pool10_price;
-                }
-
+               
 
                 $('.totalpoolpayment').html(Math.round(1000000 * (referraltotal)) / 1000000);
             });
