@@ -532,7 +532,7 @@ function checkPool1() {
                 $('.pool1pay').show();
                 $('.pool1transaction').hide();
             }
-            else if (result[2] == 3) {
+            else if (result[2] == 2) {
                 $('.pool1status').show();
                 $('.pool1status .card-status').addClass('bg-success');
                 $('.pool1status .ribbon').addClass('text-success').html('<span class="bg-success">Completed</span>');
@@ -540,7 +540,7 @@ function checkPool1() {
 
 
             }
-            else if (result[2]< 3) {
+            else if (result[2]< 2) {
                 $('.pool1status').show();
                 $('.pool1status .card-status').addClass('bg-warning');
                 $('.pool1status .ribbon').addClass('text-warning').html('<span class="bg-warning">Active</span>');
