@@ -532,7 +532,7 @@ function checkPool1() {
                 $('.pool1pay').show();
                 $('.pool1transaction').hide();
             }
-            else if (result[2] == 2) {
+            else if (result[2] == 3) {
                 $('.pool1status').show();
                 $('.pool1status .card-status').addClass('bg-success');
                 $('.pool1status .ribbon').addClass('text-success').html('<span class="bg-success">Completed</span>');
@@ -540,7 +540,7 @@ function checkPool1() {
 
 
             }
-            else if (result[2]< 2) {
+            else if (result[2]< 3) {
                 $('.pool1status').show();
                 $('.pool1status .card-status').addClass('bg-warning');
                 $('.pool1status .ribbon').addClass('text-warning').html('<span class="bg-warning">Active</span>');
@@ -568,7 +568,7 @@ $(document).ready(function () {
             myContractInstance1.methods.buyPool1().send({ from: account, value: 100000000000000000, gas: 500000 })
                 .on('transactionHash', function (hash) {
                 
-                    $('.pool1pay').hide();
+                    $('.pool1pay').show();
                     $('.pool1transaction').show();
                     $('.pool1transaction').html('<a href="https://etherscan.io/tx/' + hash + '">Track</a>');
               
@@ -839,7 +839,7 @@ $(document).ready(function () {
                         <p class="mb-5 text-white">Globally <strong>3</strong> people pays <br /> <strong>0.1</strong> ETH each</p>
                         <p class="mb-5 text-white">No Referral necessary</p>
                         <button type="button" class="btn btn-dark pool1pay text-white">Enter</button>
-                        <p class="pool1transaction btn btn-dark disabled text-white">Re-Enter Pool</p>
+                        <p class="pool1transaction btn btn-dark disabled text-white">Register & Re-Enter Pool</p>
                     </div>
                 </div>
             </div>
@@ -858,7 +858,7 @@ $(document).ready(function () {
     }
 
     .pool1status {
-        display: none
+        display: block
     }
 </style>
 
