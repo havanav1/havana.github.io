@@ -448,7 +448,7 @@ function Transaction_Pool() {
 
         if (!error) {
             $.each(log, function (key, value) {
-               $('.transaction_autopool').append('<tr><td><a href="https://etherscan.io/tx/' + value.transactionHash + '" target="_blank">' + value.transactionHash + '</a></td><td style=color:green>' + value.returnValues._user + '</td><td>' + value.returnValues._level + '</td><td>' + (value.returnValues._level == 1 ? pool1_price : pool1_price) + ' ETH</td></tr>');
+               $('.transaction_autopool').append('<tr><td><a href="https://etherscan.io/tx/' + value.transactionHash + '" target="_blank">' + value.transactionHash + '</a></td><td style=color:green>' + value.returnValues._user + '</td><td>' + value.returnValues._level + '</td><td>' + (value.returnValues._level == 1 ? pool1_price : pool2_price) + ' ETH</td></tr>');
             });
         }
     });
