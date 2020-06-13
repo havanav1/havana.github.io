@@ -438,19 +438,11 @@ function Transaction_Register() {
 function Transaction_Pool() {
     var events = myContractInstance.getPastEvents('getPoolPayment', {filter:{ _receiver: account },  'fromBlock': 0, 'toBlock': 'latest' }, function (error, log) {
         var pool1_price = 0.1;
-        var pool2_price = 0.2;
-        var pool3_price = 0.5;
-        var pool4_price = 1;
-        var pool5_price = 2;
-        var pool6_price = 5;
-        var pool7_price = 10;
-        var pool8_price = 20;
-        var pool9_price = 50;
-        var pool10_price = 100;
+       
 
         if (!error) {
             $.each(log, function (key, value) {
-                $('.transaction_autopool').append('<tr><td><a href="https://etherscan.io/tx/' + value.transactionHash + '" target="_blank">' + value.transactionHash + '</a></td><td style=color:green>' + value.returnValues._user + '</td><td>' + value.returnValues._level + '</td><td>' + (value.returnValues._level == 1 ? pool1_price : value.returnValues._level == 2 ? pool2_price : value.returnValues._level == 3 ? pool3_price : value.returnValues._level == 4 ? pool4_price : value.returnValues._level == 5 ? pool5_price : value.returnValues._level == 6 ? pool6_price : value.returnValues._level == 7 ? pool7_price : value.returnValues._level == 8 ? pool8_price : value.returnValues._level == 9 ? pool9_price : pool10_price) + ' ETH</td></tr>');
+                $('.transaction_autopool').append('<tr><td><a href="https://etherscan.io/tx/' + value.transactionHash + '" target="_blank">' + value.transactionHash + '</a></td><td style=color:green>' + value.returnValues._user + '</td><td>' + value.returnValues._level + '</td><td>' + (value.returnValues._level == 1 ? pool1_price) + ' ETH</td></tr>');
             });
         }
     });
@@ -518,15 +510,7 @@ function checkbuyLevel() {
        
             if (result[0]) {
                 checkPool1();
-                checkPool2();
-                checkPool3();
-                checkPool4();
-                checkPool5();
-                checkPool6();
-                checkPool7();
-                checkPool8();
-                checkPool9();
-                checkPool10();
+                
             }
        
 
