@@ -160,62 +160,6 @@ function getVariableData() {
         $('.pool1_current_address').html("<a href=https://etherscan.io/address/" + result + " target=_blank>" + result + "</a>");
     });
 
-    myContractInstance.methods.pool2currUserID().call().then(function (result) {
-        
-            $('.Pool2count').html(result);
-        $('.pool2_current_address').html("<a href=https://etherscan.io/address/" + result + " target=_blank>" + result + "</a>");
-    });
-
-    myContractInstance.methods.pool3currUserID().call().then(function (result) {
-       
-            $('.Pool3count').html(result);
-        $('.pool3_current_address').html("<a href=https://etherscan.io/address/" + result + " target=_blank>" + result + "</a>");
-    });
-
-    myContractInstance.methods.pool4currUserID().call().then(function (result) {
-       
-            $('.Pool4count').html(result);
-        $('.pool4_current_address').html("<a href=https://etherscan.io/address/" + result + " target=_blank>" + result+ "</a>");
-    });
-
-
-
-    myContractInstance.methods.pool5currUserID().call().then(function (result) {
-       
-            $('.Pool5count').html(result);
-        $('.pool5_current_address').html("<a href=https://etherscan.io/address/" + result + " target=_blank>" + result + "</a>");
-    });
-
-    myContractInstance.methods.pool6currUserID().call().then(function (result) {
-        
-            $('.Pool6count').html(result);
-        $('.pool6_current_address').html("<a href=https://etherscan.io/address/" + result + " target=_blank>" + result + "</a>");
-    });
-
-    myContractInstance.methods.pool7currUserID().call().then(function (result) {
-      
-            $('.Pool7count').html(result);
-        $('.pool7_current_address').html("<a href=https://etherscan.io/address/" + result + " target=_blank>" + result + "</a>");
-    });
-
-    myContractInstance.methods.pool8currUserID().call().then(function (result) {
-       
-            $('.Pool8count').html(result);
-        $('.pool8_current_address').html("<a href=https://etherscan.io/address/" + result + " target=_blank>" + result + "</a>");
-    });
-
-    myContractInstance.methods.pool9currUserID().call().then(function (result) {
-       
-            $('.Pool9count').html(result);
-        $('.pool9_current_address').html("<a href=https://etherscan.io/address/" + result + " target=_blank>" + result + "</a>");
-    });
-
-    myContractInstance.methods.pool10currUserID().call().then(function (result) {
-        
-            $('.Pool10count').html(result);     
-        $('.pool10_current_address').html("<a href=https://etherscan.io/address/" + result + " target=_blank>" + result + "</a>");
-    });
-
 
 
     myContractInstance.methods.currUserID().call().then(function (result) {
@@ -227,19 +171,19 @@ function getVariableData() {
 
     myContractInstance.methods.users(account).call().then(function (result1) {
         
-            $('.currentuseridlink').html("https://fastbullv1.network/signup/?referralid=" + result1.id);
+            $('.currentuseridlink').html("https://havanapool.live/signup/?referralid=" + result1.id);
 
-            $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://fastbullv1.network/signup/?referralid=" + result1.id);
-
-
-
-            $('.currentuseridlink').val("https://fastbullv1.network/signup/?referralid=" + result1.id);
-
-            $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://fastbullv1.network/signup/?referralid=" + result1.id);
+            $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://havanapool.live/signup/?referralid=" + result1.id);
 
 
 
-            $('.sharebutton').attr('data-url', "https://fastbullv1.network/signup/?referralid=" + result1.id);
+            $('.currentuseridlink').val("https://havanapool.live/signup/?referralid=" + result1.id);
+
+            $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://havanapool.live/signup/?referralid=" + result1.id);
+
+
+
+            $('.sharebutton').attr('data-url', "https://havanapool.live/signup/?referralid=" + result1.id);
             $('.currentuserid').html(result1.id);
             $('.currentaddress').html(account);
             $('.ethaddress').attr('href', 'https://etherscan.io/address/' + account);
@@ -265,19 +209,19 @@ function getVariableData() {
     DirectreferralCount();
     myContractInstance.methods.users(account).call().then(function (result1) {
         
-        $('.currentuseridlink').html("https://fastbullv1.network/signup/?referralid=" + result1.id);
+        $('.currentuseridlink').html("https://havanapool.live/signup/?referralid=" + result1.id);
     
-        $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://fastbullv1.network/signup/?referralid=" + result1.id);
-    
-    
-    
-        $('.currentuseridlink').val("https://fastbullv1.network/signup/?referralid=" + result1.id);
-    
-        $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://fastbullv1.network/signup/?referralid=" + result1.id);
+        $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://havanapool.live/signup/?referralid=" + result1.id);
     
     
     
-        $('.sharebutton').attr('data-url', "https://fastbullv1.network/signup/?referralid=" + result1.id);
+        $('.currentuseridlink').val("https://havanapool.live/signup/?referralid=" + result1.id);
+    
+        $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://havanapool.live/signup/?referralid=" + result1.id);
+    
+    
+    
+        $('.sharebutton').attr('data-url', "https://havanapool.live/signup/?referralid=" + result1.id);
         $('.currentuserid').html(result1.id);
         $('.currentaddress').html(account);
         $('.ethaddress').attr('href', 'https://etherscan.io/address/' + account);
