@@ -152,19 +152,19 @@ function getVariableData() {
 
     myContractInstance.methods.users(account).call().then(function (result1) {
         
-            $('.currentuseridlink').html("https://havanav1.github.io/signup/?referralid=" + result1.id);
+            $('.currentuseridlink').html("https://havanapool.live/signup/?referralid=" + result1.id);
 
-            $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://havanav1.github.io/signup/?referralid=" + result1.id);
-
-
-
-            $('.currentuseridlink').val("https://havanav1.github.io/signup/?referralid=" + result1.id);
-
-            $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://havanav1.github.io/signup/?referralid=" + result1.id);
+            $('.currentuseridlinknew').html("https://link.trustwallet.com/open_url?coin_id=60&url=https://havanapool.live/signup/?referralid=" + result1.id);
 
 
 
-            $('.sharebutton').attr('data-url', "https://havanav1.github.io/signup/?referralid=" + result1.id);
+            $('.currentuseridlink').val("https://havanapool.live/signup/?referralid=" + result1.id);
+
+            $('.currentuseridlinknew').val("https://link.trustwallet.com/open_url?coin_id=60&url=https://havanapool.live/signup/?referralid=" + result1.id);
+
+
+
+            $('.sharebutton').attr('data-url', "https://havanapool.live/signup/?referralid=" + result1.id);
             $('.currentuserid').html(result1.id);
             $('.currentaddress').html(account);
             $('.ethaddress').attr('href', 'https://etherscan.io/address/' + account);
@@ -401,7 +401,7 @@ function Transaction_Pool() {
 
         if (!error) {
             $.each(log, function (key, value) {
-                $('.transaction_autopool').append('<tr><td><a href="https://etherscan.io/tx/' + value.transactionHash + '" target="_blank">' + value.transactionHash + '</a></td><td style=color:green>' + value.returnValues._user + '</td><td>' + value.returnValues._level + '</td><td>' + (value.returnValues._level == 1 ? pool1_price) + ' ETH</td></tr>');
+                $('.transaction_autopool').append('<tr><td><a href="https://etherscan.io/tx/' + value.transactionHash + '" target="_blank">' + value.transactionHash + '</a></td><td style=color:green>' + value.returnValues._user + '</td><td>' + value.returnValues._level + '</td><td>' + (value.returnValues._level == 1 ? pool1_price : pool1_price) + ' ETH</td></tr>');
             });
         }
     });
